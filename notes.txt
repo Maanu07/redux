@@ -1,0 +1,63 @@
+* Video 1
+* redux is a library that is used to manage state in our application.
+* redux can be implemented with any javascript application.
+* redux is not limited to only react.
+* redux is a predicitve state container library for js applications.
+* in simple language redux is a store where all the states of the application are kept at a single place.
+* redux toolkit makes it easier to implement redux.
+* react-redux library is used to bind react and redux/redux toolkit
+
+
+******************************
+
+* Video 3
+* Three core concepts in redux are : store, action , reducer 
+* store is a place where all the states of the application will be stored
+* action describes what has happened in the application 
+* reducer takes the action and returns the new state of the application
+
+
+
+********************************
+
+* Video 4 
+* Three principles of redux:
+  1. the state of application will be a single js object which will be managed by redux store 
+  2. the application cannot directly update the state, they have to dispatch a action which will tell what to do 
+  3. reducer is a pure function that takes the initial state and the action and therefore returns the new state of the application 
+
+  
+
+  ******************************************
+
+  * Video 5 
+  * action is a js object with a 'type' attribute that tells what action has happened 
+  * action is created using a action creator 
+  * action creator is a function that returns the action object 
+
+
+  *******************************************
+
+  * Video 6 
+  * reducer is a pure function that takes prev state and action object to return a new state of the application
+
+
+  ******************************************
+
+  * Video 7 
+  * redux store contains the entire state of the application 
+  * we have to use redux library to create a redux store
+  * redux.createStore(reducer) method creates a redux store, we have to pass the reducer method as a argument 
+  * to get the current state from store, we can run store.getState() method 
+  * we need to add a subscribe method to our redux store that will be called whenever the state changes 
+  * store.subscribe(function), it takes a function  as argument 
+  * now to invoke an action we need to call store.dispatch(action_creator) method 
+  * we also have unsubscribe method which removes subscribe method from the store
+
+
+  ************************************************
+
+  * Video 9 
+  * bindActionCreators() is a helper funcion that lets you bind all the action creators to the store.dispatch() method 
+  * it is a optional function
+  * this function is exported by redux  library
