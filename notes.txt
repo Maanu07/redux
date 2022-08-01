@@ -61,3 +61,16 @@
   * bindActionCreators() is a helper funcion that lets you bind all the action creators to the store.dispatch() method 
   * it is a optional function
   * this function is exported by redux  library
+
+
+
+  **************************************************
+
+  * Video 10,12,12
+  * we can create multiple reducer functions to manage our state change easily for large application 
+  * but redux store takes only one reducer as a argument 
+  * therefore we need a function to combine these reducers function together
+  * we can import combineReducers() method from redux library to combine 2 or more reducers 
+  * let rootReducer = combineReducers({key:value,key:value})
+  * createStore(rootReducer)
+  
