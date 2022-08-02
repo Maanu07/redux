@@ -74,3 +74,12 @@
   * let rootReducer = combineReducers({key:value,key:value})
   * createStore(rootReducer)
   
+
+
+  ********************************************************
+
+  * Video 13 
+  * suppose we have a complex nested state, then in this case it's a little hectic to update nested state property we want to update 
+  * therefore we have a library called 'immer' which let us directly change that property inside the nested state 
+  * we use produce(state,(draft) => {}) method from immer library
+
