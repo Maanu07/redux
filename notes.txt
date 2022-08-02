@@ -83,3 +83,12 @@
   * therefore we have a library called 'immer' which let us directly change that property inside the nested state 
   * we use produce(state,(draft) => {}) method from immer library
 
+
+
+**********************************************************
+
+* Video 14
+* middleware in redux and how to use them
+* we use a middleware called redux-logger which logs the action, prevstate and new state of the application 
+* to use middleware with redux we use a method called applyMiddleware() in redux 
+* applyMiddleware(middleware) is passed as a argument to the createStore() method

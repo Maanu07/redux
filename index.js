@@ -2,6 +2,8 @@ const redux = require("redux");
 const createStore = redux.createStore;
 const bindActionCreators = redux.bindActionCreators; // helper function
 const combineReducers = redux.combineReducers;
+const reduxLogger = require('redux-logger')   // middleware for logging
+const applyMiddleware = redux.applyMiddleware;
 
 // i will create action
 // action is a js object
@@ -89,14 +91,14 @@ const rootReducer = combineReducers({
 });
 
 // creating the store and passing the reducer as a argument
-const store = createStore(rootReducer);
+const store = createStore(rootReducer,applyMiddleware(reduxLogger.logger));
 
 // prints the initial state of the application using store.getState() method
 console.log("Initial state : ", store.getState());
 
 // subscribe method in store... whenever the state change this subscribe method is called, subscribe method returns a unsubcribe method which can be used to unsubscribe from transition of state
 const unsubscribe = store.subscribe(() => {
-  console.log("Final state : ", store.getState());
+  // console.log("Final state : ", store.getState());
 });
 
 // dispatch method in store...it is used to invoke any action , takes an action as a argument
