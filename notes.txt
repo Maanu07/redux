@@ -92,3 +92,14 @@
 * we use a middleware called redux-logger which logs the action, prevstate and new state of the application 
 * to use middleware with redux we use a method called applyMiddleware() in redux 
 * applyMiddleware(middleware) is passed as a argument to the createStore() method
+
+
+
+
+
+*************************************************************
+
+* Video 15
+* synchronous action (takes immediately)
+* asynchronous action (takes some time, like api call)
+* we use redux-thunk middleware to make asynchronous action creator
